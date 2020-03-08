@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>MIC/employees</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <!--  <img class="logo" src="img/logo.jpg" alt="logo"-->
+     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+         <a href="home.html" class="navbar-brand"> MIC </a>
+         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a href="emp.html" class="nav-link">Employees</a>
+               </li>
+               <li class="nav-item">
+                <a href="customr.html" class="nav-link">Customer</a>
+             </li>
+             <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+             </li>
+               <li class="nav-item">
+                   <a href="aboutus.html" class="nav-link">About us</a>
+                </li>
+          </ul>
+         </div>
+     </nav>
+  </header>
+  <div class="container">
+   
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <br />
+
+          <div class="card">
+            <div class="card-header text-center">
+                <h1>Employees Form</h1>
+              </div>
+    <img class="em" src="img/emp.jpg" alt="em">
+</div>
+    <form action="" class="main-form needs-validation was-validated col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" novalidate>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+            <lebel for="firstname">First Name</lebel>
+        <input type="text" name="firstname" id="firstname" class="form-control" placeholder = "FirstName" required>
+        <div class="invalid-feedback">Please Enter your First Name</div>
+        </div>
+        <div class="col md-4 mb-3">
+        <lebel for="lastname">Last Name</lebel>
+        <input type="text" name="lastname" id="lastname" class="form-control" placeholder = "LastName" required>
+        <div class="invalid-feedback">Please Enter your Last Name</div>
+    </div>
+        <div class="col md-4 mb-3">
+            <lebel for="username">User Name</lebel>
+        <input type="text" name="username" id="username" class="form-control" placeholder = "UserName" required>
+        <div class="invalid-feedback">Please Enter UserName</div>
+        </div>
+        </div>
+        <div class="form-group">
+            <lebel for="email">Your E-mail</lebel>
+        <input type="email" name="email" id="email" class="form-control" placeholder = "E-mail" required>
+        <div class="invalid-feedback">Please Enter Right E-mail</div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+        <lebel for="password">Password</lebel>
+        <input type="password" name="password"  class="form-control" placeholder = "Password" required >
+        <small>Must be 8 charecters</small>
+        </div>
+        <div class="col">
+            <lebel for="password">Re-Type Password</lebel>
+            <input type="password" name="password"  class="form-control" placeholder = "Password" required >
+            </div>
+            </div>
+
+        <div class="form-group">
+            <lebel for="depnod">Department Number</lebel>
+            <input type="number" min="0" name="depno"  class="form-control"  required >
+            <div class="invalid-feedback">Must be a positive number</div>
+        </div>
+        <div class="form-group">
+        <lebel for="gender">Gender</lebel>
+        <select name="gender"  id="gender" class="form-control" required>
+            <option></option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        </select>
+    </div>
+    <div class="form-group">
+    <div class="custom-file">
+        <input type="file" class="custom-file-input" id="customFile">
+        <label class="custom-file-label" for="customFile">Choose file</label>
+        <label class="text-muted">Inser Your ID (Optional)</label>
+      </div></div>
+      <div class="form-group">
+        <div class="form-check ">
+            <input type="checkbox" id="accept-terms" required>
+        <label for="accept-terms" class="form-check-label">Accept Terms and Condition</label>
+        </div></div>
+        <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="row">
+                <div class="col">
+                    <button type="submit" class="btn btn-outline-success">Submit</button>
+                </div>
+                <div class="col">
+                <button type="reset" class="btn btn-outline-secondary">Clear</button>
+            </div>
+          
+        </div>
+    </form>
+    <br>
+    <div class="card-footer text-left text-muted">
+       All Rights Reserved @2020
+    </div>
+       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="bootstrap-validate.js"></script>
+    <!-- <script>
+        var form = document.querySelector(".needs-valdition");
+
+        form.addEventListener('submit', function(event){
+            if (form.checkValidity() === false){
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated')
+        })
+    </script> -->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+    </script>
+</body>
+</html>
